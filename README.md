@@ -1,0 +1,2 @@
+# VisualStudioExtensions
+My VSIX extensions
