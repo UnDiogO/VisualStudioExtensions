@@ -66,7 +66,7 @@ namespace CodeEditorLineInfo.Src
             var dte = dteService as DTE2;
             var activeDocument = dte.ActiveDocument;
 
-            var resultText = $"{activeDocument.FullName} at line {lineIndex + 1}\r\n{lineText.TrimStart(' ')}";
+            var resultText = $"{activeDocument.FullName} at line {lineIndex + 1}{Environment.NewLine}{lineText.TrimStart(' ')}";
 
             System.Windows.Forms.Clipboard.SetText(resultText);
 
